@@ -2,9 +2,7 @@
 ```markdown
 # Proyecto de Desarrollo - Grupo de Estudio
 
-¡Bienvenido al repositorio oficial de nuestro proyecto! Somos un equipo de **30 desarrolladores** trabajando de forma colaborativa. Para mantener el orden, la calidad del código y evitar conflictos desastrosos en Git, implementamos un flujo de trabajo estructurado basado en **Pull Requests** y **Revisiones de Código (Code Review)**.
 
-Por favor, lee este documento detalladamente antes de realizar tu primer aporte.
 
 ---
 
