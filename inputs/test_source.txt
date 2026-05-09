@@ -1,0 +1,5 @@
+// Archivo de prueba para el compilador
+int x = 10;
+if (x > 5) {
+    print("Hola Mundo");
+}
