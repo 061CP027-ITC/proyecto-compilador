@@ -97,9 +97,36 @@ Dado que somos un equipo grande de 30 personas, nos organizamos de la siguiente 
 
 ---
 
-## 💻 5. Requisitos e Instalación Local
+## 🛠️ 5. Estructura del Proyecto (Compilador)
 
-*(Completa este espacio con las instrucciones específicas para correr tu proyecto localmente)*
+El compilador está organizado en fases modulares para permitir el desarrollo en paralelo.
+
+```text
+proyecto-compilador/
+│
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/compiler/
+│   │           ├── lexer/          # Análisis Léxico
+│   │           ├── parser/         # Análisis Sintáctico
+│   │           ├── semantic/       # Análisis Semántico
+│   │           ├── utils/          # Utilidades comunes
+│   │           └── Main.java       # Punto de entrada
+│   │
+│   └── test/                       # Pruebas Unitarias
+│
+├── inputs/                         # Archivos de código fuente de entrada
+└── docs/                           # Documentación técnica
+```
+
+### Descripción de Módulos
+
+*   **lexer**: Tokenización del código fuente. Transforma caracteres en Tokens.
+*   **parser**: Validación gramatical y generación del Árbol de Sintaxis Abstracta (AST).
+*   **semantic**: Validación lógica (tipos, alcances) sobre el AST.
+
+## 💻 6. Requisitos e Instalación Local
 
 1. Clonar el proyecto:
    ```bash
