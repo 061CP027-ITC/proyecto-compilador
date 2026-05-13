@@ -14,6 +14,9 @@ public class Parser {
     }
 
     public ASTNode parse() {
-        return null; // Implementación pendiente
+        for(Token token : tokens) {
+            System.out.println(token);
+        }
+        return null;
     }
 }

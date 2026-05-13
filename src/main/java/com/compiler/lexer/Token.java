@@ -4,8 +4,8 @@ package com.compiler.lexer;
  * Representación de un símbolo léxico.
  */
 public class Token {
-    private String tipo;
-    private String valor;
+    private final String tipo;
+    private final String valor;
 
     public Token(String tipo, String valor) {
         this.tipo = tipo;
