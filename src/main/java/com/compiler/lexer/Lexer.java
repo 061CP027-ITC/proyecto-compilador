@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class Lexer {
     private final List<String> reservadas = Arrays.asList(
-            "int","float","if","else","while","public","class","void","String"
+            "int","float","if","else","while","public","class","void","String", "print"
     );
 
     private final List<String> operadores = Arrays.asList(
