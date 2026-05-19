@@ -1,6 +1,7 @@
 package com.compiler.parser;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -32,7 +33,7 @@ public class ASTNode {
     }
 
     public List<ASTNode> getHijos() {
-        return hijos;
+        return Collections.unmodifiableList(hijos);
     }
 
     public void imprimir(String prefijo) {
