@@ -9,6 +9,13 @@ import java.util.List;
  */
 public class ASTNode {
 
+    public ASTNode() {
+    this.tipo = null;
+    this.valor = null;
+    this.hijos = new ArrayList<>();
+}
+
+
     // Definición base de nodos
     private String tipo;
     private String valor;
