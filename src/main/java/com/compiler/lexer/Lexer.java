@@ -28,13 +28,7 @@ public class Lexer {
 
             while ((linea = br.readLine()) != null) {
 
-                String lineaMasticada = linea.replace(";", " ; ")
-                        .replace("(", " ( ")
-                        .replace(")", " ) ")
-                        .replace("{", " { ")
-                        .replace("}", " } ")
-                        .replace("=", " = ")
-                        .replace("+", " + ");
+                String lineaMasticada = masticarLinea(linea);
 
                 String[] pedazos = lineaMasticada.split(" ");
 
@@ -52,6 +46,20 @@ public class Lexer {
         }
 
         return tokens;
+    }
+
+    private String masticarLinea(String linea) {
+        String lineaMasticada = linea;
+
+        for (String operador : operadores) {
+            lineaMasticada = lineaMasticada.replace(operador, " " + operador + " ");
+        }
+
+        for (String simbolo : simbolos) {
+            lineaMasticada = lineaMasticada.replace(simbolo, " " + simbolo + " ");
+        }
+
+        return lineaMasticada;
     }
 
     private Token clasificarToken(String pedazo) {
